@@ -31,16 +31,17 @@ function App() {
   const [cardType, setCardType] = useState('americanexpress')
   const [logoSource, setLogoSource] = useState(americanexpress)
 
-  const generateFakeCardNumber = () => {
-    const cardNumber = generateCardNumber(cardType)
-    setNumber(cardNumber.join(''))
-  }
-
   const handleCardTypeChange = ({ target: { value }}) => {
     setCardType(value)
     setNumber('')
     setLogoSource(logoMap[value])
   }
+  
+  const generateFakeCardNumber = () => {
+    const cardNumber = generateCardNumber(cardType)
+    setNumber(cardNumber.join(''))
+  }
+
 
   return (
     <Section>
