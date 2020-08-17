@@ -1,17 +1,8 @@
-import React, { useState, useEffect } from 'react'
-import styled from 'styled-components'
-import generateCardNumber from './lib/generator'
-import CardWrapper from './components/card'
+import React, { useState, useEffect } from 'react';
 
+import generateCardNumber from './lib/generator';
+import CardWrapper from './components/card';
 import './App.css';
-
-const Section = styled.section`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-`;
 
 function App() {
 
@@ -28,11 +19,11 @@ function App() {
 
   useEffect(() => {
     generateFakeCardNumber();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cardType])
 
   return (
-    <Section>
+    <section>
       <div>
         <select value={cardType} onChange={handleCardTypeChange}>
           <option value='americanexpress'>American Express</option>
@@ -40,10 +31,10 @@ function App() {
           <option value='mastercard'>Mastercard</option>
           <option value='discover'>Discover</option>
         </select>
+        <CardWrapper cardType={cardType} cardNumber={number}/>
+        <button onClick={generateFakeCardNumber}>Refresh</button>
       </div>
-      <CardWrapper cardType={cardType} cardNumber={number}/>
-      <button onClick={generateFakeCardNumber}>Generate</button>
-    </Section>
+    </section>
   )
 }
 

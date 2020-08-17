@@ -14,11 +14,9 @@ const logoMap = {
 };
 
 const CardWrapper = ({ cardType, cardNumber }) => (
-  <div>
-    <img src={logoMap[cardType]} alt='card type'/>
-    <h2>
-      {formator(cardNumber, cardType)}
-    </h2>
+  <div className="card">
+    <img src={logoMap[cardType]} alt='card type logo'/>
+    <h2>{formator(cardNumber, cardType)}</h2>
   </div>
 )
 
