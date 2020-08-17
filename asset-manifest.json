@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/js-credit-card-generator/static/css/main.a1cec0e0.chunk.css",
+    "main.js": "/js-credit-card-generator/static/js/main.cefe987c.chunk.js",
+    "main.js.map": "/js-credit-card-generator/static/js/main.cefe987c.chunk.js.map",
+    "runtime-main.js": "/js-credit-card-generator/static/js/runtime-main.7597bcfe.js",
+    "runtime-main.js.map": "/js-credit-card-generator/static/js/runtime-main.7597bcfe.js.map",
+    "static/js/2.40df6f69.chunk.js": "/js-credit-card-generator/static/js/2.40df6f69.chunk.js",
+    "static/js/2.40df6f69.chunk.js.map": "/js-credit-card-generator/static/js/2.40df6f69.chunk.js.map",
+    "index.html": "/js-credit-card-generator/index.html",
+    "precache-manifest.83ab9cb92f273c3e3fa0fe46f9ad883b.js": "/js-credit-card-generator/precache-manifest.83ab9cb92f273c3e3fa0fe46f9ad883b.js",
+    "service-worker.js": "/js-credit-card-generator/service-worker.js",
+    "static/css/main.a1cec0e0.chunk.css.map": "/js-credit-card-generator/static/css/main.a1cec0e0.chunk.css.map",
+    "static/js/2.40df6f69.chunk.js.LICENSE.txt": "/js-credit-card-generator/static/js/2.40df6f69.chunk.js.LICENSE.txt",
+    "static/media/amex.svg": "/js-credit-card-generator/static/media/amex.3a070c47.svg",
+    "static/media/discover.svg": "/js-credit-card-generator/static/media/discover.67a87acb.svg",
+    "static/media/mastercard.svg": "/js-credit-card-generator/static/media/mastercard.5966f60b.svg",
+    "static/media/visa.svg": "/js-credit-card-generator/static/media/visa.67f273f0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7597bcfe.js",
+    "static/js/2.40df6f69.chunk.js",
+    "static/css/main.a1cec0e0.chunk.css",
+    "static/js/main.cefe987c.chunk.js"
+  ]
+}
