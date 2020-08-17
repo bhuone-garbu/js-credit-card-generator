@@ -17,14 +17,9 @@ function generatePrefills(cardType){
       prefills = Array(12).fill(0).map(() => Math.floor(Math.random() * 10))
       return [ 3, secondDigit ].concat(prefills)
 
-    case 'visa16':
+    case 'visa':
       // the first digit of a visa is 4
       prefills = Array(14).fill(0).map(() => Math.floor(Math.random() * 10))
-      return [ 4 ].concat(prefills)
-
-    case 'visa13':
-      // the first digit of a visa is 4
-      prefills = Array(11).fill(0).map(() => Math.floor(Math.random() * 10))
       return [ 4 ].concat(prefills)
     
     case 'mastercard':

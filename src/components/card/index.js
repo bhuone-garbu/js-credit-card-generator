@@ -1,14 +1,24 @@
-import React from 'react'
-import { Title, CardImg } from './style'
+import React from 'react';
 
-const CardWrapper = ({ cardSource }) => (
+import americanexpress from '../../cardlogos/amex.svg'
+import discover from '../../cardlogos/discover.svg'
+import mastercard from '../../cardlogos/mastercard.svg'
+import visa from '../../cardlogos/visa.svg'
+import formator from '../../lib/formator';
+
+const logoMap = {
+  americanexpress,
+  visa,
+  mastercard,
+  discover
+};
+
+const CardWrapper = ({ cardType, cardNumber }) => (
   <div>
-    <Title>
-      Hello
-    </Title>
-      <CardImg>
-        <img src={cardSource} alt='card type'/>
-      </CardImg>
+    <img src={logoMap[cardType]} alt='card type'/>
+    <h2>
+      {formator(cardNumber, cardType)}
+    </h2>
   </div>
 )
 
