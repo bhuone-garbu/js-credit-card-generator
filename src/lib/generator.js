@@ -50,10 +50,9 @@ function addCheckSum(cardNumber){
 
   let checkSum = 0
 
-  // Reason for this check offset is to figure out whther the final list is going
+  // Reason for this check offset is to figure out whether the final list is going
   // to be even or odd which will affect calculating the check_sum.
-  // This is mainly also to avoid reversing the list back and forth which is specified
-  // on the Luhn algorithm.
+  // This is to avoid reversing the list back and forth which is specified on the Luhn algorithm.
   const checkOffset = (cardNumber.length + 1) % 2
 
   checkSum = cardNumber.reduce((sum, num, index) => {
@@ -69,7 +68,6 @@ function addCheckSum(cardNumber){
   // making sure the checksum is within 10 range
   return 10 - (checkSum % 10)
 }
-
 
 export default function generateCardNumber(cardType) {
 
